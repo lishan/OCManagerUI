@@ -744,6 +744,14 @@ angular.module('basic.services', ['ngResource', 'ui.bootstrap', 'ui.bootstrap.da
             $scope.planCustomizes = [];
             $scope.instancesList = INSTANCES.hbase;
             $scope.nextDiv = function () {
+              if (!$scope.svList) {
+                $scope.data = data;
+                $scope.svName = 'HBase';
+                $scope.svActive = 0;
+                $scope.planIdIndex = 0;
+                $scope.planCustomizes = [];
+                $scope.instancesList = INSTANCES.hbase;
+              }
               $scope.svList = !$scope.svList;
             };
             $scope.checkSv = function (val, idx) {
