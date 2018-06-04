@@ -695,7 +695,9 @@ angular.module('basic')
         bsLimit.open();
       };
       $scope.editBsLimit = function (idx) {
-        $scope.limitToggle(idx);
+        if (!$scope.bsLimit[idx].zt.isshow) {
+          $scope.bsLimit[idx].zt.isshow = true;
+        }
         $scope.bsLimit[idx].zt.isde = true;
       };
       $scope.saveBsLimit = function (idx, item) {
