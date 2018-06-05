@@ -92,8 +92,8 @@ angular.module('basic.resource', ['ngResource']).factory('role', ['$resource', '
   });
 }]).factory('addtenantapi', ['$resource', 'GLOBAL', function ($resource, GLOBAL) {
   return $resource(GLOBAL.host + '/tenant', {}, {
-    post: {method: "POST"}
-    // updata: {method: "PUT"}
+    post: {method: "POST"},
+    updata: {method: "PUT"}
   });
 }]).factory('updateinstance', ['$resource', 'GLOBAL', function ($resource, GLOBAL) {
   return $resource(GLOBAL.host + '/tenant/:id/service/instance/:instanceName', {

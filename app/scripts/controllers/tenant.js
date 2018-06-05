@@ -716,7 +716,7 @@ angular.module('basic')
             });
           });
           tenant.quota = JSON.stringify(postobj);
-          addtenantapi.updata(tenant).then(()=>{}, function (error) {
+          addtenantapi.updata(tenant, () => {}, (error) => {
             let newArr = [];
             angular.forEach(oldqupta, function (name, i) {
               let obj = {key: i, val: name};
