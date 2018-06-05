@@ -74,9 +74,9 @@ angular.module('basic')
       if (tree[0] && tree[0].id) {
         $scope.nodeId = tree[0].id;
       }
-      // if (tree && tree.length === 0) {
-      //   $state.go('home.permission');
-      // }
+      if (tree && tree.length === 0) {
+        $state.go('home.permission');
+      }
       $scope.treeOptions = {
         nodeChildren: "children",
       };
