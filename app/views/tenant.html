@@ -3,7 +3,7 @@
     <tr>
       <td class="sidebar">
         <div treecontrol class="tree-classic" tree-model="dataForTheTree" options="treeOptions" on-selection="showSelected(node)" selected-node="selected">
-          {{node.name}}
+          <span>{{node.name}}</span>
           <span class="ta-cd" ng-show="node.parentId">
             <span ng-click="edittenan($event, node)" class="glyphicon glyphicon-edit edit-ten" aria-hidden="true"></span>
             <span ng-click="deltenan($event, node)" class="glyphicon glyphicon-trash del-ten" aria-hidden="true"></span>
@@ -69,13 +69,9 @@
                                                 alt=""></div>
                 <div class="col-md-3 lscn" uib-tooltip="{{bsi.instanceName}}"><span>服务名</span>&nbsp;&nbsp;{{bsi.instanceName}}
                 </div>
-                <!--<div class="col-md-3"><span>用户容量</span>&nbsp;&nbsp;路径&nbsp;:&nbsp;/usr/zhongxin/balbala;</div>-->
                 <div class="col-md-6"
                       style="line-height: 17px;margin-top:12px;color: #999;overflow: hidden;text-overflow:ellipsis;">
-                  <!--<p>instance_id&nbsp;:&nbsp;{{bsi.instance_id}}</p>-->
-                  <!--<label ng-repeat="(key,val) in bsi.quota">{{key+'&nbsp;:&nbsp;'+val}}&nbsp;&nbsp;</label>-->
                 </div>
-                <!--<div class="col-md-2">{{}}</div>-->
                 <div class="col-md-2 lscn" style="text-align: right"><a style="margin-right: 15px;"
                                                                         ng-click="checkInfo(bsi.tenantId,bsi.instanceName)"
                                                                         href="javascript:void(0);">访问信息</a></div>
@@ -180,7 +176,6 @@
                       <div class="col-md-2" style="text-align: right;">
                         <span ng-class="{'rotate':!arr.isshow, 'check-btn': arr.isshow}"
                               ng-click="toggleServeList(timeIndex,$index,arr)">
-
                         </span>
                       </div>
                     </div>
@@ -253,18 +248,7 @@
               </li>
             </ul>
             <div class="page-style" ng-if="grid.usertotal>10">
-              <uib-pagination
-                ng-model="grid.userpage"
-                total-items="grid.usertotal"
-                items-per-page="grid.usersize"
-                class="pagination-sm"
-                boundary-links="true"
-                max-size="12"
-                rotate="true"
-                previous-text="上一页"
-                next-text="下一页"
-                first-text="首页"
-                last-text="末页">
+              <uib-pagination ng-model="grid.userpage" total-items="grid.usertotal" items-per-page="grid.usersize" class="pagination-sm" boundary-links="true" max-size="12" rotate="true" previous-text="上一页" next-text="下一页" first-text="首页" last-text="末页">
               </uib-pagination>
             </div>
           </li>
