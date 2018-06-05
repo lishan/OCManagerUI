@@ -23,6 +23,7 @@ angular.module('basic')
         });
       };
       $scope.naletr = [
+        {name: '我的待办', url: 'console.todolist', bdb: false},
         {name: '租户管理', url: 'console.tenant', bdb: true},
         {name: '用户管理', url: 'console.user', bdb: false},
         {name: '角色管理', url: 'console.role', bdb: false},

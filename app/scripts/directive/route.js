@@ -55,5 +55,10 @@ angular.module('basic.router', ['ui.router'])
         url: '/user',
         templateUrl: 'views/user.html',
         controller: 'UserCtrl',
+      })
+      .state('console.todolist', {
+        url:'/todolist',
+        templateUrl: 'views/todolist.html',
+        controller: 'TodoListCtrl'
       });
   }]);

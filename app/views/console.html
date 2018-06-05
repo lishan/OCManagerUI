@@ -28,7 +28,7 @@
                 ng-mouseover="addBdb($index)"
                 ng-mouseleave="removeBdb($index)">
               <a>
-                <span>{{item.name}}</span>
+                <span>{{item.name}}<label ng-if=" item.url==='console.todolist' " class="notifynum"><span>16</span></label></span>
               </a>
             </li>
           </ul>

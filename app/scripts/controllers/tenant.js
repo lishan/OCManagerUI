@@ -22,6 +22,34 @@ angular.module('basic')
         return res;
       };
 
+      $scope.talentList = [
+        {
+          name:'Tanent1',
+          createtime: '2018-01-12 16:50:08',
+          description: '描述信息描述信息......'
+        },
+        {
+          name:'Tanent2',
+          createtime: '2018-01-12 16:50:08',
+          description: '描述信息描述信息......'
+        },
+        {
+          name:'Tanent3',
+          createtime: '2018-01-12 16:50:08',
+          description: '描述信息描述信息......'
+        },
+        {
+          name:'Tanent4',
+          createtime: '2018-01-12 16:50:08',
+          description: '描述信息描述信息......'
+        },
+        {
+          name:'Tanent5',
+          createtime: '2018-01-12 16:50:08',
+          description: '描述信息描述信息......'
+        },
+      ];
+
       let left_by_block = function () {
         let thisheight = $(window).height() - 80;
         $('.tree-classic').css('min-height', thisheight);
@@ -46,9 +74,9 @@ angular.module('basic')
       if (tree[0] && tree[0].id) {
         $scope.nodeId = tree[0].id;
       }
-      if (tree && tree.length === 0) {
-        $state.go('home.permission');
-      }
+      // if (tree && tree.length === 0) {
+      //   $state.go('home.permission');
+      // }
       $scope.treeOptions = {
         nodeChildren: "children",
       };

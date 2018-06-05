@@ -937,4 +937,101 @@ input:focus,textarea:focus{}
 }
 
 
+// 我的待办页面CSS
 
+.todoListRequestTypeBlock {
+  border: 1px solid #CCD5E0 ;
+  position: relative;
+  padding: 11px 5px 11px 5px;
+  box-sizing: border-box;
+  display: inline;
+}
+
+.showBlueBackground {
+  background-color: #47B2FB;
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.showNormalBackground {
+  background-color: #F9FAFC;
+  border: 1px solid #CCD5E0;
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #475669;
+  letter-spacing: 0;
+}
+
+.myTodoListPage {
+  margin-top: 50px;
+  padding: 30px 10px 20px 10px;
+}
+
+.mytodolist_block {
+  padding: 30px 10px 0px 10px;
+}
+
+.mytodolist_table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 30px 10px 20px 10px;
+}
+
+.mytodolist_table_header {
+  background: #E5E9F2;
+  border-radius: 2px;
+  
+}
+
+.mytodolist_table_header > tr {
+  height: 30px;
+}
+
+.mytodolist_table_header > tr > th {
+  text-align:center;
+}
+
+.mytodolist_table > tbody > tr {
+  height: 50px;
+  background: #F9FAFC;
+  border: 1px solid #E0E6ED;
+  border-radius: 2px;
+  border-radius: 2px;
+}
+
+.tableRowContent {
+  // background-color:red;
+  margin-top:10px;
+  padding-top: 15px;
+  background: #F9FAFC;
+  border: 1px solid #E0E6ED;
+  border-radius: 2px;
+  height: 50px;
+}
+
+.tableRowContent > label {
+  display: inline-block;
+  text-align:center;
+}
+
+.tableRowContent:hover{
+  background: #FFFFFF;
+  border: 1px solid #E0E6ED;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.04);
+  border-radius: 2px;
+}
+
+.notifynum {
+  background: #FB6362;
+  border-radius: 100px;
+}
+
+.notifynum > span {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 9px;
+}

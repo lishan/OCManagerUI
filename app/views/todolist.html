@@ -1,0 +1,58 @@
+<!--我的待办页面-->
+<div class="myTodoListPage">
+    <div class="mytodolist_block">
+      <label id="allTypesApply" class="todoListRequestTypeBlock" ng-class="{true:'showBlueBackground', false:'showNormalBackground'}[todoListChosenType.alltype]">
+        <input type="checkbox" ng-model="todoListChosenType.alltype" ng-change="changeTodoListChosenType('alltype')" />
+        <span>全部申请类型</span>
+        <span>32</span>
+      </label>
+      <label id="resourceApply" class="todoListRequestTypeBlock" ng-class="{true:'showBlueBackground', false:'showNormalBackground'}[todoListChosenType.resourcetype]">
+        <input type="checkbox" ng-model="todoListChosenType.resourcetype" ng-change="changeTodoListChosenType('resourcetype')" />
+        <span>资源申请</span>
+        <span>10</span>
+      </label>
+      <label id="toolsApply" class="todoListRequestTypeBlock" ng-class="{true:'showBlueBackground', false:'showNormalBackground'}[todoListChosenType.tooltype]">
+        <input type="checkbox" ng-model="todoListChosenType.tooltype" ng-change="changeTodoListChosenType('tooltype')" />
+        <span>工具申请</span>
+        <span>10</span>
+      </label>
+    </div>
+  
+  
+    <div class="mytodolist_block">
+      <table class="mytodolist_table">
+        <thead class="mytodolist_table_header">
+          <tr>
+            <th width="10%">服务名称</th>
+            <th width="30%">提交时间</th>
+            <th width="10%">限额</th>
+            <th width="15%">申请状态</th>
+            <th width="10%">申请类型</th>
+            <th width="25%">操作</th>
+          </tr>
+        </thead>
+      </table>
+      <div class="tableRowContent zoom" ng-repeat="item in myTodoList">
+        <label style="width:10%;">{{item.name}}</label>
+        <label style="width:30%;">{{item.commitdate}}</label>
+        <label style="width:10%;">{{item.limitcapacity}}</label>
+        <label style="width:15%;">{{item.applystatus}}</label>
+        <label style="width:10%;">{{item.applytype}}</label>
+        <label style="width:20%;">
+          <div ng-if=" item.applystatus === '申请中' ">
+            <a href="">同意</a>
+            <a href="">拒绝</a>
+          </div>
+          <div ng-if=" item.applystatus != '申请中' ">
+            <a>同意</a>
+          </div>
+        </label>
+      </div>
+    </div>
+  
+    <div class="page-style" ng-if="true">
+      <div uib-pagination ng-model="grid.page" total-items="grid.total" items-per-page="grid.size" class="pagination-sm" boundary-links="false"
+        max-size="12" rotate="true" previous-text="上一页" next-text="下一页" first-text="首页" last-text="末页">
+      </div>
+    </div>
+  </div>
