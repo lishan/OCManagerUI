@@ -342,7 +342,7 @@ $smbg: #c256fc !default;
 
 // 新版租户管理样式: Ren Qingwei
 .tenant_mainbody {
-  height: 500px;
+  height: 800px;
   margin: 20px 20px 20px 20px;
   background: #ffffff;
   border: 1px solid #e0e6ed;
@@ -463,51 +463,159 @@ $smbg: #c256fc !default;
     }
   }
 
-  .addNewSubTanent {
-    margin-top: 10px;
-    border: 1px solid #47B2FB;
-    border-radius: 4px;
-    font-family: PingFangSC-Regular;
-    span {
-      font-size: 12px;
-      color: #000000;
-      letter-spacing: 0;
-      line-height: 14px;
+  
+
+}
+
+.addNewSubTanent {
+  margin-top: 10px;
+  border: 1px solid #47B2FB;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  span {
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 14px;
+  }
+}
+
+
+.tenant_mainbody {
+
+  .tenant_mainbody_head {
+    .form-horizontal {
+      span {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+        line-height: 14px;
+
+        margin-left: 17px;
+      }
+
+      input {
+        background: #FFFFFF;
+        border: 1px solid #CCD5E0;
+        border-radius: 4px;
+      }
+
+      .fixed-width {
+        width: 320px;
+      }
+
+      .fixed-height {
+        height: 26px;
+      }
+
+      .moveToLeft {
+        margin-left: -20px;
+        z-index: 9999;
+      }
+    }
+  }
+  .title {
+    border-left: 2px solid #47B2FB;
+    padding-left: 15px;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 12px;
+    color: #1F2D3D;
+    letter-spacing: 0;
+
+    margin-bottom: 20px;
+  }
+
+  .content {
+    .row {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 17px;
+
+      span {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+        line-height: 14px;
+        float: left;
+      }
+
+      .userinput {
+        margin-left: 50px;
+      }
     }
   }
 
-  table {
-    margin-top: 20px;
-    margin-left: 0;
-    width: 100%;
-    border: 1px solid #CCD5E0;
-    border-radius: 2px;
-    thead {
-      tr {
-        background-color: #e6e9f1;
-        line-height: 30px;
-        th {
-          text-align: center;
-        }
+  .form-horizontal .control-label {
+    text-align: left;
+  }
+}
+
+.tanent_table {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #CCD5E0;
+  border-radius: 2px;
+  thead {
+
+    tr {
+      background-color: #e6e9f1;
+      line-height: 30px;
+
+      th {
+        text-align: center;
       }
-    }
-    tbody {
-      tr {
-        line-height: 30px;
-        td {
-          text-align: center;
-          a {
-            font-family: MicrosoftYaHei;
-            font-size: 12px;
-            color: #47B2FB;
-            letter-spacing: 0;
-            line-height: 14px;
-          }
-        }
-      }
-      tr:hover {
-        background-color: #E1E7EC;
-      }
+
     }
   }
+  tbody {
+
+    tr {
+      line-height: 30px;
+      border-top: 1px solid #E1E7EC;
+      border-bottom: 1px solid #E1E7EC;
+
+      td {
+        text-align: center;
+
+        a {
+          font-family: MicrosoftYaHei;
+          font-size: 12px;
+          color: #47B2FB;
+          letter-spacing: 0;
+          line-height: 14px;
+        }
+
+      }
+    }
+    tr:hover {
+      background-color: #E1E7EC;
+    }
+
+  }
+
+  tfoot {
+    tr {
+      line-height: 30px;
+    }
+
+    .align-text-center {
+      text-align: center;
+    }
+
+  }
+}
+
+.font-color {
+  color: #47B2FB;
+}
+
+.normal-text {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #47B2FB;
+  letter-spacing: 0;
 }

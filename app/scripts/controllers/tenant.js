@@ -22,6 +22,19 @@ angular.module('basic')
         return res;
       };
 
+      $scope.currentPage = 'tenantlist.html';
+      $scope.gotoPage = function(newPage) {
+        $scope.currentPage = newPage;
+      }
+
+      $scope.all_service_areas = [
+        '服务地域A',
+        '服务地域B',
+        '服务地域C',
+        '服务地域D',
+        '服务地域E'
+      ];
+
       $scope.talentList = [
         {
           name:'Tanent1',

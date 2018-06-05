@@ -15,96 +15,9 @@
       面包屑//todo
     </div>
     <div class="tenant_mainbody">
-      <div class="tenant_mainbody_head">
-        <div class="tanant_profile_picture">
-          <div class="tanant_profile_picture_content glyphicon glyphicon-user">
-          </div>
-        </div>
-
-        <div class="tanent_profile_info">
-          <div class="tanent_profile_line">
-            <span class="tenant_content_title">拉萨市</span>
-            <button class="tenent_content_delete">
-              <span class="glyphicon glyphicon-trash"></span>
-            </button>
-          </div>
-
-          <div class="tanent_profile_line">
-            <span class="tenent_conent_describe_title">描述信息：</span>
-            <span class="tenent_conent_describe_content">拉萨市的描述信息......</span>
-          </div>
-
-          <div class="tanent_profile_line">
-            <span class="tenent_conent_describe_title">创建时间：</span>
-            <span class="tenent_conent_describe_content">2018-01-12 12:34</span>
-            <span class="tenent_summary_note">
-              <span>子租户：13</span>
-            </span>
-            <span class="tenent_summary_note">
-              <span>实例：13</span>
-            </span>
-            <span class="tenent_summary_note">
-              <span>资源：13</span>
-            </span>
-            <span class="tenent_summary_note">
-              <span>工具：13</span>
-            </span>
-            <span class="tenent_summary_note">
-              <span>用户：13</span>
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="tenant_mainbody_body">
-        <ul class="right-nav">
-          <li class="active" ng-click="changeCon()">
-            <span>租户列表</span>
-          </li>
-          <li ng-click="changeCon()">
-            <span>实例管理</span>
-          </li>
-          <li ng-click="changeCon()">
-            <span>资源管理</span>
-          </li>
-          <li ng-click="changeCon()">
-            <span>工具管理</span>
-          </li>
-          <li ng-click="changeCon()">
-            <span>用户授权</span>
-          </li>
-        </ul>
-
-        <div>
-          <button class="addNewSubTanent">
-            <label class="glyphicon glyphicon-plus"></label>
-            <span>新增子租户</span>
-          </button>
-        </div>
-
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th width="15%">租户名称</th>
-                <th width="30%">创建时间</th>
-                <th width="55%">描述信息</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr ng-repeat="item in talentList">
-                <td>
-                  <a>{{item.name}}</a>
-                </td>
-                <td>{{item.createtime}}</td>
-                <td>{{item.description}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <div ng-include="'views/tenantmng/tenantlist.html'"></div>
+        <div ng-include="'views/tenantmng/addtenant.html'"></div>
+        <div ng-include="'views/tenantmng/addtenantinfo.html'"></div>
     </div>
   </div>
 </div>

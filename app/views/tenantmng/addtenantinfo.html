@@ -1,0 +1,62 @@
+<div id="addtenantinfo" ng-if=" currentPage === 'addtenantinfo.html' ">
+        <div class="tenant_mainbody_head">
+            <button ng-click="gotoPage('addtenant.html')" class="btn btn-default" style="float:right">返回</button>
+            <div>
+                <div class="title">
+                    <span>租户信息录入</span>
+                </div>
+                <form class="form-horizontal">
+    
+                    <div class="form-group">
+                        <span for="tanent_name" class="col-sm-1 control-label">租户名称*</span>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control fixed-height fixed-width" id="tanent_name" placeholder="名称只能包含小写字母">
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <span for="validate_date" class="col-sm-1 control-label">有效日期*</span>
+                        <div class="col-sm-1">
+                            <p class="input-group">
+                              <input type="text" class="form-control fixed-height fixed-width" id="validate_date" placeholder="选择有效日期" uib-datepicker-popup ng-model="dt" is-open="popup1.opened" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                              <span class="input-group-btn">
+                                <i class="glyphicon glyphicon-calendar moveToLeft"></i>
+                              </span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <span for="tanent_description" class="col-sm-1 control-label">租户描述</span>
+                        <div class="col-sm-10">
+                            <textarea cols="50" rows="5" type="text" class="form-control fixed-width" id="tanent_description" placeholder="描述内容不超过20个字符"/>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <span for="service_settings" class="col-sm-1 control-label">服务设置</span>
+                        <div class="col-sm-10">
+                            <select class="form-control fixed-height fixed-width" ng-model="service_area" ng-options="o as o for o in all_service_areas">
+                            </select>
+                        </div>
+                    </div>
+    
+    
+                </form>
+            </div>
+    
+            <div>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-12" style="border: 1px solid #E0E6ED;width:90%;margin-left:33px;"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button class="addNewSubTanent" style="margin-left:17px;">开始创建</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
