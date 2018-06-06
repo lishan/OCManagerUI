@@ -44,49 +44,30 @@
 
     <div class="tenant_mainbody_body">
         <ul class="right-nav">
-            <li class="active" ng-click="changeCon()">
+            <li ng-class=" {true:'active'}[tanentListPageData.currentTab === 'tanentlist'] " ng-click=" tanentListPageData.currentTab = 'tanentlist' ">
                 <span>租户列表</span>
             </li>
-            <li ng-click="changeCon()">
+            <li ng-class=" {true:'active'}[tanentListPageData.currentTab === 'instantmng'] " ng-click=" tanentListPageData.currentTab = 'instantmng' ">
                 <span>实例管理</span>
             </li>
-            <li ng-click="changeCon()">
+            <li ng-class=" {true:'active'}[tanentListPageData.currentTab === 'resourcemng'] " ng-click=" tanentListPageData.currentTab = 'resourcemng' ">
                 <span>资源管理</span>
             </li>
-            <li ng-click="changeCon()">
+            <li ng-class=" {true:'active'}[tanentListPageData.currentTab === 'toolmng'] " ng-click=" tanentListPageData.currentTab = 'toolmng' ">
                 <span>工具管理</span>
             </li>
-            <li ng-click="changeCon()">
+            <li ng-class=" {true:'active'}[tanentListPageData.currentTab === 'userauth'] " ng-click=" tanentListPageData.currentTab = 'userauth' ">
                 <span>用户授权</span>
             </li>
         </ul>
 
         <div>
-            <button class="addNewSubTanent" ng-click="gotoPage('addtenant.html')">
-                <label class="glyphicon glyphicon-plus"></label>
-                <span>新增子租户</span>
-            </button>
+            <div ng-if="tanentListPageData.currentTab === 'tanentlist'" ng-include=" 'views/tenantmng/showtenantlist.html' "></div>
+            <div ng-if="tanentListPageData.currentTab === 'instantmng'" ng-include=" 'views/tenantmng/showinstantmng.html' "></div>
+            <div ng-if="tanentListPageData.currentTab === 'resourcemng'" ng-include=" 'views/tenantmng/showresourcemng.html' "></div>
+            <div ng-if="tanentListPageData.currentTab === 'toolmng'" ng-include=" 'views/tenantmng/showtoolmng.html' "></div>
+            <div ng-if="tanentListPageData.currentTab === 'userauth'" ng-include=" 'views/tenantmng/showuserauth.html' "></div>
         </div>
-
-        <div>
-            <table class="tanent_table">
-                <thead>
-                    <tr>
-                        <th width="15%">租户名称</th>
-                        <th width="30%">创建时间</th>
-                        <th width="55%">描述信息</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="item in talentList">
-                        <td>
-                            <a>{{item.name}}</a>
-                        </td>
-                        <td>{{item.createtime}}</td>
-                        <td>{{item.description}}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        
     </div>
 </div>

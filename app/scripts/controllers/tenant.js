@@ -27,6 +27,10 @@ angular.module('basic')
         $scope.currentPage = newPage;
       }
 
+      $scope.tanentListPageData = {
+        currentTab: 'tanentlist'
+      };
+
       $scope.all_service_areas = [
         '服务地域A',
         '服务地域B',
@@ -34,6 +38,281 @@ angular.module('basic')
         '服务地域D',
         '服务地域E'
       ];
+
+      $scope.instantmng = {
+        serviceTypes: [
+          {
+            name: '全部服务',
+            count: 80,
+            selected: false
+          },
+          {
+            name: 'redis',
+            count: 80,
+            selected: false
+          },
+          {
+            name: 'HDFS',
+            count: 80,
+            selected: false
+          },
+          {
+            name: 'Hive',
+            count: 10,
+            selected: false
+          },
+          {
+            name: 'MySQL',
+            count: 10,
+            selected: false
+          },
+          {
+            name: 'GBase',
+            count: 10,
+            selected: false
+          },
+          {
+            name: 'VM',
+            count: 20,
+            selected: false
+          },
+          {
+            name: 'Spark',
+            count: 30,
+            selected: false
+          },
+        ],
+        instances: [
+          {
+            title:'zhaoyimingredis001',
+            pictureurl:'/images/serviceimg/redis.png',
+            updatedate: '2018-05-21 21:25:12',
+            status: '上线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis002',
+            pictureurl:'/images/serviceimg/default.png',
+            updatedate: '2018-05-21 21:25:12',
+            status: '上线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis003',
+            pictureurl:'/images/serviceimg/elasticsearch.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis004',
+            pictureurl:'/images/serviceimg/etcd.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis005',
+            pictureurl:'/images/serviceimg/greenplum.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis006',
+            pictureurl:'/images/serviceimg/hbase.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis007',
+            pictureurl:'/images/serviceimg/hbase.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis008',
+            pictureurl:'/images/serviceimg/hive.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis009',
+            pictureurl:'/images/serviceimg/kafka.png',
+            updatedate: '2018-05-22 22:22:33',
+            status: '下线',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+        ],
+
+      };
 
       $scope.talentList = [
         {

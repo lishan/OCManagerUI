@@ -342,7 +342,7 @@ $smbg: #c256fc !default;
 
 // 新版租户管理样式: Ren Qingwei
 .tenant_mainbody {
-  height: 800px;
+  height: 1500px;
   margin: 20px 20px 20px 20px;
   background: #ffffff;
   border: 1px solid #e0e6ed;
@@ -618,4 +618,188 @@ $smbg: #c256fc !default;
   font-size: 12px;
   color: #47B2FB;
   letter-spacing: 0;
+}
+
+#showinstancemngpageid {
+  .service_choice_btn {
+    background: #F9FAFC;
+    border-radius: 4px;
+    margin-right: 10px;
+
+    span {
+      font-family: MicrosoftYaHei;
+      font-size: 12px;
+      color: #475669;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+  }
+
+  .selected {
+    border: 1px solid #47B2FB;  
+  }
+
+  .notselected {
+    border: 1px solid #CCD5E0;
+  }
+
+  .instance_card {
+    background: #FFFFFF;
+    border: 1px solid #E0E6ED;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.04);
+    border-radius: 4px;
+
+    display: inline-block;
+    width: 320px;
+    height: 266px;
+
+    margin-right: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .cartcontent {
+      height: 230px;
+    }
+
+    .instancePicture {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-left: 11px;
+      margin-top: 11px;
+      float:left;
+    }
+
+    .instanceHeader {
+      margin-left: 70px;
+      padding-top: 11px;
+
+      .flaotToRight {
+        margin-right: 20px;
+        float: right; 
+      }
+
+      .visitInfo {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #47B2FB;
+        letter-spacing: 0;
+      }
+
+      .updatedateinfo {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #A2B0C4;
+        letter-spacing: 0;
+      }
+
+      .status {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #A2B0C4;
+        letter-spacing: 0;
+      }
+
+      .title {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #1F2D3D;
+        letter-spacing: 0;
+      }
+
+    }
+
+    .cardbody {
+      margin-left: 11px;
+      padding-top: 11px;
+
+      .service_item_row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .servieitem_name {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #A2B0C4;
+        letter-spacing: 0;
+        margin-right: 5px;
+        
+        display: inline-block;
+        width: 80px;
+
+      }
+
+      .servieitem_value {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+        
+        display: inline-block;
+        width: 50px;
+
+      }
+
+      .serviceitem_percentage {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+        
+        margin-left: 90px;
+        display: inline-block;
+        width: 10px;
+      }
+
+      .servieitem_usage {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+        
+        margin-left: 5px;
+        display: inline-block;
+        width: 10px;
+
+      }
+
+
+
+
+
+    }
+
+    .cardfooter {
+      background: #F9FAFC;
+      border-top: 1px solid #CCD5E0;
+      height: 35px;
+
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.04);
+      border-radius: 0 0 4px 4px;
+
+      .cartbtn {
+        width: 150px;
+        display: inline-block;
+        padding-top: 5px;
+        height: 33px;
+        text-align: center;
+      }
+
+      .spacecol {
+        border-right: 1px solid #CCD5E0;
+        display: inline;
+        padding-top: 8px;
+        padding-bottom: 11px;
+
+      }
+    }
+  }
+
+  .spaceline {
+    border-top: 1px solid #CCD5E0;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 12px;
+  }
 }

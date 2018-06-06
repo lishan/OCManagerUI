@@ -1,0 +1,56 @@
+<div id="showinstancemngpageid">
+    <div>
+        <button class="addNewSubTanent" ng-click="gotoPage('addtenant.html')">
+            <label class="glyphicon glyphicon-plus"></label>
+            <span>新增实例</span>
+        </button>
+    </div>
+    <div style="margin-top:10px">
+        <button ng-class="{ true : 'selected', false : 'notselected' }[item.selected]" class="service_choice_btn" ng-click="item.selected=!item.selected"
+            ng-repeat="item in instantmng.serviceTypes">
+            <span>{{item.name}} {{item.count}}</span>
+        </button>
+
+    </div>
+
+    <div style="margin-top:10px;display:inline-flex;flex-wrap:wrap;">
+        <div ng-repeat="item in instantmng.instances">
+            <div class="instance_card">
+                <div class="cartcontent">
+                    <div class="instancePicture">
+                        <img src="{{item.pictureurl}}" style="width:48px;height:48px;" />
+                    </div>
+                    <div class="instanceHeader">
+                        <div class="">
+                            <span>{{item.title}}</span>
+                            <a class="flaotToRight visitInfo">访问信息</a>
+                        </div>
+                        <div>
+                            <span class="updatedateinfo">{{item.updatedate}}</span>
+                            <span class="flaotToRight status">{{item.status}}</span>
+                        </div>
+                    </div>
+                    <div class="spaceline"></div>
+                    <div class="cardbody">
+                        <div ng-repeat="service_item in item.serviceitems" class="service_item_row">
+                            <span class="servieitem_name">{{service_item.name}}</span>
+                            <span class="servieitem_value">{{service_item.value}}</span>
+                            <span class="serviceitem_percentage">M</span>
+                            <span class="servieitem_usage">{{service_item.usage}}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardfooter">
+                    <a class="cartbtn">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </a>
+                    <div class="spacecol"></div>
+                    <a class="cartbtn">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
