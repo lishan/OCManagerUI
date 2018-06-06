@@ -657,6 +657,24 @@ $smbg: #c256fc !default;
     margin-top: 10px;
     margin-bottom: 10px;
 
+    .notifystatus {
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 3px;
+      margin-right: 6px;
+      float: right;
+    }
+
+    .online {
+      border: 6px solid #00CF9B;
+    }
+
+    .offline {
+      border: 6px solid #A2B0C4;
+    }
+
     .cartcontent {
       height: 230px;
     }

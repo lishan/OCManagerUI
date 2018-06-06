@@ -28,6 +28,7 @@
                         <div>
                             <span class="updatedateinfo">{{item.updatedate}}</span>
                             <span class="flaotToRight status">{{item.status}}</span>
+                            <span class="notifystatus" ng-class=" {true:'online', false: 'offline'}[item.status==='上线'] "></span>
                         </div>
                     </div>
                     <div class="spaceline"></div>
