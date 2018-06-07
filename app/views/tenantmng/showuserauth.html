@@ -1,1 +1,30 @@
-<h1>Show Auth Page</h1>
+<div id="showuserauthpageid">
+        <button class="addNewSubTanent" ng-click="gotoPage('addtenant.html')">
+            <label class="glyphicon glyphicon-plus"></label>
+            <span>新增用户</span>
+        </button>
+    </div>
+    
+    <div>
+        <table class="tanent_table">
+            <thead>
+                <tr>
+                    <th width="20%">用户名称</th>
+                    <th width="60%">权限</th>
+                    <th width="20%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in userauthmng.userlist">
+                    <td>
+                        <a>{{item.username}}</a>
+                    </td>
+                    <td>{{item.role}}</td>
+                    <td>
+                        <a><i class="glyphicon glyphicon-pencil"></i></a>
+                        <a><i class="glyphicon glyphicon-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

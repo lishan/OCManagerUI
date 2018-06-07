@@ -8,14 +8,14 @@
             <form class="form-horizontal">
 
                 <div class="form-group">
-                    <span for="tanent_name" class="col-sm-1 control-label">租户名称*</span>
+                    <span for="tanent_name" class="col-sm-1 control-label">租户名称<i class="color4star">*</i></span>
                     <div class="col-sm-10">
                         <input type="text" class="form-control fixed-height fixed-width" id="tanent_name" placeholder="名称只能包含小写字母">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <span for="validate_date" class="col-sm-1 control-label">有效日期*</span>
+                    <span for="validate_date" class="col-sm-1 control-label">有效日期<i class="color4star">*</i></span>
                     <div class="col-sm-1">
                         <p class="input-group">
                           <input type="text" class="form-control fixed-height fixed-width" id="validate_date" placeholder="选择有效日期" uib-datepicker-popup ng-model="dt" is-open="popup1.opened" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />

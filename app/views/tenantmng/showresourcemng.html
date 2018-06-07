@@ -1,1 +1,54 @@
-<h1>Show Resource Mng</h1>
+<div id="showresourcemngpageid">
+    <div style="margin-top:10px">
+        <button ng-class="{ true : 'selected', false : 'notselected' }[item.selected]" class="service_choice_btn" ng-click="item.selected=!item.selected"
+            ng-repeat="item in resoucemng.resourceApplyTypes">
+            <span>
+                <span class="servicestatus" ng-class=" {'efected':'efected', 'notapproved': 'notapproved','approving':'approving','notapply':'applying'}[item.applystatus] ">
+                </span>
+                {{item.name}} {{item.count}}
+            </span>
+        </button>
+    </div>
+
+    <div style="margin-top:10px;display:inline-flex;flex-wrap:wrap;">
+        <div ng-repeat="item in resoucemng.resources">
+            <div class="service_card">
+                <div class="cartcontent">
+                    <div class="instancePicture">
+                        <img src="{{item.pictureurl}}" style="width:48px;height:48px;" />
+                    </div>
+                    <div class="instanceHeader">
+                        <div class="">
+                            <span>
+                                {{item.title}}
+                            </span>
+                            <span class="flaotToRight status">{{item.applystatusname}}</span>
+                            <span style="margin-right:5px;" class="flaotToRight servicestatus" ng-class=" {'efected':'efected', 'notapproved': 'notapproved','approving':'approving','notapply':'notapply'}[item.applystatus] "></span>
+                        </div>
+                        <div>
+                            <span class="updatedateinfo">{{item.updatedate}}</span>
+                        </div>
+                    </div>
+                    <div class="spaceline"></div>
+                    <div class="cardbody">
+                        <div ng-repeat="service_item in item.serviceitems" ng-if=" item.applystatus === 'efected' " class="service_item_row">
+                            <span class="servieitem_name">{{service_item.name}}</span>
+                            <span class="servieitem_value">{{service_item.value}}</span>
+                            <span class="serviceitem_percentage">M</span>
+                            <span class="servieitem_usage">{{service_item.usage}}</span>
+                        </div>
+                        <div ng-if=" item.applystatus != 'efected' ">
+                            <div class="notifymsg" ng-class=" {true:'notifymsg_approving', false:'notifymsg_not_approving'}[item.applystatus === 'approving' ] ">资源限额申请</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardfooter">
+                    <a class="center_cartbtn">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

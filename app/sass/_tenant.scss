@@ -136,10 +136,7 @@ $smbg: #c256fc !default;
         }
       }
     }
-
-
   }
-
 
   :focus {
     outline: none;
@@ -158,8 +155,8 @@ $smbg: #c256fc !default;
     line-height: 40px;
     padding-left: 30px;
     font-size: $title-size-default;
-    background: #FFFFFF;
-    box-shadow: 0 1px 0 0 rgba(224,230,237,0.50);
+    background: #ffffff;
+    box-shadow: 0 1px 0 0 rgba(224, 230, 237, 0.5);
   }
   .right-nav {
     width: 100%;
@@ -427,7 +424,7 @@ $smbg: #c256fc !default;
 
   .right-nav {
     overflow: hidden;
-    
+
     padding: 0;
     margin-top: 15px;
     li {
@@ -462,14 +459,11 @@ $smbg: #c256fc !default;
       line-height: 14px;
     }
   }
-
-  
-
 }
 
 .addNewSubTanent {
   margin-top: 10px;
-  border: 1px solid #47B2FB;
+  border: 1px solid #47b2fb;
   border-radius: 4px;
   font-family: PingFangSC-Regular;
   span {
@@ -480,9 +474,7 @@ $smbg: #c256fc !default;
   }
 }
 
-
 .tenant_mainbody {
-
   .tenant_mainbody_head {
     .form-horizontal {
       span {
@@ -496,8 +488,8 @@ $smbg: #c256fc !default;
       }
 
       input {
-        background: #FFFFFF;
-        border: 1px solid #CCD5E0;
+        background: #ffffff;
+        border: 1px solid #ccd5e0;
         border-radius: 4px;
       }
 
@@ -516,11 +508,11 @@ $smbg: #c256fc !default;
     }
   }
   .title {
-    border-left: 2px solid #47B2FB;
+    border-left: 2px solid #47b2fb;
     padding-left: 15px;
     font-family: MicrosoftYaHei-Bold;
     font-size: 12px;
-    color: #1F2D3D;
+    color: #1f2d3d;
     letter-spacing: 0;
 
     margin-bottom: 20px;
@@ -557,10 +549,9 @@ $smbg: #c256fc !default;
   margin-left: 0;
   margin-bottom: 10px;
   width: 100%;
-  border: 1px solid #CCD5E0;
+  border: 1px solid #ccd5e0;
   border-radius: 2px;
   thead {
-
     tr {
       background-color: #e6e9f1;
       line-height: 30px;
@@ -568,15 +559,13 @@ $smbg: #c256fc !default;
       th {
         text-align: center;
       }
-
     }
   }
   tbody {
-
     tr {
       line-height: 30px;
-      border-top: 1px solid #E1E7EC;
-      border-bottom: 1px solid #E1E7EC;
+      border-top: 1px solid #e1e7ec;
+      border-bottom: 1px solid #e1e7ec;
 
       td {
         text-align: center;
@@ -584,17 +573,15 @@ $smbg: #c256fc !default;
         a {
           font-family: MicrosoftYaHei;
           font-size: 12px;
-          color: #47B2FB;
+          color: #47b2fb;
           letter-spacing: 0;
           line-height: 14px;
         }
-
       }
     }
     tr:hover {
-      background-color: #E1E7EC;
+      background-color: #e1e7ec;
     }
-
   }
 
   tfoot {
@@ -605,24 +592,23 @@ $smbg: #c256fc !default;
     .align-text-center {
       text-align: center;
     }
-
   }
 }
 
 .font-color {
-  color: #47B2FB;
+  color: #47b2fb;
 }
 
 .normal-text {
   font-family: MicrosoftYaHei;
   font-size: 12px;
-  color: #47B2FB;
+  color: #47b2fb;
   letter-spacing: 0;
 }
 
 #showinstancemngpageid {
   .service_choice_btn {
-    background: #F9FAFC;
+    background: #f9fafc;
     border-radius: 4px;
     margin-right: 10px;
 
@@ -636,17 +622,17 @@ $smbg: #c256fc !default;
   }
 
   .selected {
-    border: 1px solid #47B2FB;  
+    border: 1px solid #47b2fb;
   }
 
   .notselected {
-    border: 1px solid #CCD5E0;
+    border: 1px solid #ccd5e0;
   }
 
   .instance_card {
-    background: #FFFFFF;
-    border: 1px solid #E0E6ED;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.04);
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.04);
     border-radius: 4px;
 
     display: inline-block;
@@ -668,11 +654,11 @@ $smbg: #c256fc !default;
     }
 
     .online {
-      border: 6px solid #00CF9B;
+      border: 6px solid #00cf9b;
     }
 
     .offline {
-      border: 6px solid #A2B0C4;
+      border: 6px solid #a2b0c4;
     }
 
     .cartcontent {
@@ -685,7 +671,7 @@ $smbg: #c256fc !default;
       height: 48px;
       margin-left: 11px;
       margin-top: 11px;
-      float:left;
+      float: left;
     }
 
     .instanceHeader {
@@ -694,37 +680,36 @@ $smbg: #c256fc !default;
 
       .flaotToRight {
         margin-right: 20px;
-        float: right; 
+        float: right;
       }
 
       .visitInfo {
         font-family: MicrosoftYaHei;
         font-size: 12px;
-        color: #47B2FB;
+        color: #47b2fb;
         letter-spacing: 0;
       }
 
       .updatedateinfo {
         font-family: MicrosoftYaHei;
         font-size: 12px;
-        color: #A2B0C4;
+        color: #a2b0c4;
         letter-spacing: 0;
       }
 
       .status {
         font-family: MicrosoftYaHei;
         font-size: 12px;
-        color: #A2B0C4;
+        color: #a2b0c4;
         letter-spacing: 0;
       }
 
       .title {
         font-family: MicrosoftYaHei;
         font-size: 12px;
-        color: #1F2D3D;
+        color: #1f2d3d;
         letter-spacing: 0;
       }
-
     }
 
     .cardbody {
@@ -739,13 +724,12 @@ $smbg: #c256fc !default;
       .servieitem_name {
         font-family: MicrosoftYaHei;
         font-size: 12px;
-        color: #A2B0C4;
+        color: #a2b0c4;
         letter-spacing: 0;
         margin-right: 5px;
-        
+
         display: inline-block;
         width: 80px;
-
       }
 
       .servieitem_value {
@@ -753,10 +737,9 @@ $smbg: #c256fc !default;
         font-size: 12px;
         color: #475669;
         letter-spacing: 0;
-        
+
         display: inline-block;
         width: 50px;
-
       }
 
       .serviceitem_percentage {
@@ -764,7 +747,7 @@ $smbg: #c256fc !default;
         font-size: 12px;
         color: #475669;
         letter-spacing: 0;
-        
+
         margin-left: 90px;
         display: inline-block;
         width: 10px;
@@ -775,25 +758,19 @@ $smbg: #c256fc !default;
         font-size: 12px;
         color: #475669;
         letter-spacing: 0;
-        
+
         margin-left: 5px;
         display: inline-block;
         width: 10px;
-
       }
-
-
-
-
-
     }
 
     .cardfooter {
-      background: #F9FAFC;
-      border-top: 1px solid #CCD5E0;
+      background: #f9fafc;
+      border-top: 1px solid #ccd5e0;
       height: 35px;
 
-      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.04);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.04);
       border-radius: 0 0 4px 4px;
 
       .cartbtn {
@@ -805,19 +782,503 @@ $smbg: #c256fc !default;
       }
 
       .spacecol {
-        border-right: 1px solid #CCD5E0;
+        border-right: 1px solid #ccd5e0;
         display: inline;
         padding-top: 8px;
         padding-bottom: 11px;
-
       }
     }
   }
 
   .spaceline {
-    border-top: 1px solid #CCD5E0;
+    border-top: 1px solid #ccd5e0;
     margin-left: 11px;
     margin-right: 11px;
     margin-top: 12px;
   }
+}
+
+#showresourcemngpageid {
+  .service_choice_btn {
+    background: #f9fafc;
+    border-radius: 4px;
+    margin-right: 10px;
+
+    span {
+      font-family: MicrosoftYaHei;
+      font-size: 12px;
+      color: #475669;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+  }
+
+  .selected {
+    border: 1px solid #47b2fb;
+  }
+
+  .notselected {
+    border: 1px solid #ccd5e0;
+  }
+
+  .servicestatus {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 6px;
+  }
+
+  .efected {
+    border: 6px solid #00cf9b;
+  }
+
+  .notapproved {
+    border: 6px solid #f96466;
+  }
+
+  .approving {
+    border: 6px solid #57b5f2;
+  }
+
+  .notapply {
+    border: 6px solid #a2b0c4;
+  }
+
+  .service_card {
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+
+    display: inline-block;
+    width: 320px;
+    height: 266px;
+
+    margin-right: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .notifystatus {
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 3px;
+      margin-right: 6px;
+      float: right;
+    }
+
+    .online {
+      border: 6px solid #00cf9b;
+    }
+
+    .offline {
+      border: 6px solid #a2b0c4;
+    }
+
+    .cartcontent {
+      height: 230px;
+    }
+
+    .instancePicture {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-left: 11px;
+      margin-top: 11px;
+      float: left;
+    }
+
+    .instanceHeader {
+      margin-left: 70px;
+      padding-top: 11px;
+
+      .flaotToRight {
+        margin-right: 20px;
+        float: right;
+      }
+
+      .visitInfo {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #47b2fb;
+        letter-spacing: 0;
+      }
+
+      .updatedateinfo {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #a2b0c4;
+        letter-spacing: 0;
+      }
+
+      .status {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #a2b0c4;
+        letter-spacing: 0;
+      }
+
+      .title {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #1f2d3d;
+        letter-spacing: 0;
+      }
+    }
+
+    .cardbody {
+      margin-left: 11px;
+      padding-top: 11px;
+
+      .notifymsg {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .notifymsg_not_approving {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #47b2fb;
+        letter-spacing: 0;
+      }
+
+      .notifymsg_approving {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #ccd5e0;
+        letter-spacing: 0;
+      }
+
+      .service_item_row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .servieitem_name {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #a2b0c4;
+        letter-spacing: 0;
+        margin-right: 5px;
+
+        display: inline-block;
+        width: 80px;
+      }
+
+      .servieitem_value {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+
+        display: inline-block;
+        width: 50px;
+      }
+
+      .serviceitem_percentage {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+
+        margin-left: 90px;
+        display: inline-block;
+        width: 10px;
+      }
+
+      .servieitem_usage {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+
+        margin-left: 5px;
+        display: inline-block;
+        width: 10px;
+      }
+    }
+
+    .cardfooter {
+      background: #f9fafc;
+      border-top: 1px solid #ccd5e0;
+      height: 35px;
+
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+      border-radius: 0 0 4px 4px;
+
+      .center_cartbtn {
+        width: 320px;
+        display: inline-block;
+        padding-top: 5px;
+        height: 33px;
+        text-align: center;
+      }
+
+      .spacecol {
+        border-right: 1px solid #ccd5e0;
+        display: inline;
+        padding-top: 8px;
+        padding-bottom: 11px;
+        color: #47B2FB;
+      }
+    }
+  }
+
+  .spaceline {
+    border-top: 1px solid #ccd5e0;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 12px;
+  }
+}
+
+#showuserauthpageid {
+
+}
+
+#showtoolmngpageid {
+  .service_choice_btn {
+    background: #f9fafc;
+    border-radius: 4px;
+    margin-right: 10px;
+
+    span {
+      font-family: MicrosoftYaHei;
+      font-size: 12px;
+      color: #475669;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+  }
+
+  .selected {
+    border: 1px solid #47b2fb;
+  }
+
+  .notselected {
+    border: 1px solid #ccd5e0;
+  }
+
+  .servicestatus {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 6px;
+  }
+
+  .efected {
+    border: 6px solid #00cf9b;
+  }
+
+  .notapproved {
+    border: 6px solid #f96466;
+  }
+
+  .approving {
+    border: 6px solid #57b5f2;
+  }
+
+  .notapply {
+    border: 6px solid #a2b0c4;
+  }
+
+  .tool_card {
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+
+    display: inline-block;
+    width: 320px;
+    height: 100px;
+
+    margin-right: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .notifystatus {
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 3px;
+      margin-right: 6px;
+      float: right;
+    }
+
+    .online {
+      border: 6px solid #00cf9b;
+    }
+
+    .offline {
+      border: 6px solid #a2b0c4;
+    }
+
+    .cartcontent {
+      height: 63px;
+    }
+
+    .instancePicture {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      margin-left: 11px;
+      margin-top: 11px;
+      float: left;
+    }
+
+    .instanceHeader {
+      margin-left: 70px;
+      padding-top: 11px;
+
+      .flaotToRight {
+        margin-right: 20px;
+        float: right;
+      }
+
+      .visitInfo {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #47b2fb;
+        letter-spacing: 0;
+      }
+
+      .updatedateinfo {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #a2b0c4;
+        letter-spacing: 0;
+      }
+
+      .status {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #a2b0c4;
+        letter-spacing: 0;
+      }
+
+      .title {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #1f2d3d;
+        letter-spacing: 0;
+      }
+    }
+
+    .cardbody {
+      margin-left: 11px;
+      padding-top: 11px;
+
+      .notifymsg {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .notifymsg_not_approving {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #47b2fb;
+        letter-spacing: 0;
+      }
+
+      .notifymsg_approving {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #ccd5e0;
+        letter-spacing: 0;
+      }
+
+      .service_item_row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .servieitem_name {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #a2b0c4;
+        letter-spacing: 0;
+        margin-right: 5px;
+
+        display: inline-block;
+        width: 80px;
+      }
+
+      .servieitem_value {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+
+        display: inline-block;
+        width: 50px;
+      }
+
+      .serviceitem_percentage {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+
+        margin-left: 90px;
+        display: inline-block;
+        width: 10px;
+      }
+
+      .servieitem_usage {
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #475669;
+        letter-spacing: 0;
+
+        margin-left: 5px;
+        display: inline-block;
+        width: 10px;
+      }
+    }
+
+    .cardfooter {
+      background: #f9fafc;
+      border-top: 1px solid #ccd5e0;
+      height: 35px;
+
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+      border-radius: 0 0 4px 4px;
+
+      .center_cartbtn {
+        width: 320px;
+        display: inline-block;
+        padding-top: 5px;
+        height: 33px;
+        text-align: center;
+      }
+
+      .spacecol {
+        border-right: 1px solid #ccd5e0;
+        display: inline;
+        padding-top: 8px;
+        padding-bottom: 11px;
+        color: #47B2FB;
+      }
+    }
+  }
+
+  .spaceline {
+    border-top: 1px solid #ccd5e0;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 12px;
+  }
+}
+
+
+
+
+.color4star {
+  color: red;
 }

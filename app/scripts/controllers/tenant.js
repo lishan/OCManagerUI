@@ -314,6 +314,230 @@ angular.module('basic')
 
       };
 
+      $scope.resoucemng = {
+        resourceApplyTypes: [
+          {
+            name: '全部服务',
+            count: 80,
+            selected: false,
+            type:null,
+          },
+          {
+            name: '已生效',
+            count: 20,
+            selected: false,
+            applystatus: 'efected',
+          },
+          {
+            name: '未批准',
+            count: 20,
+            selected: false,
+            applystatus: 'notapproved',
+          },
+          {
+            name: '审批中',
+            count: 10,
+            selected: false,
+            applystatus: 'approving',
+          },
+          {
+            name: '未申请',
+            count: 10,
+            selected: false,
+            applystatus: 'notapply',
+          },
+        ],
+        resources: [
+          {
+            title:'redis',
+            pictureurl:'/images/serviceimg/redis.png',
+            updatedate: '2018-05-21 21:25:12',
+            applystatusname: '未申请',
+            applystatus: 'notapply',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis002',
+            pictureurl:'/images/serviceimg/default.png',
+            updatedate: '2018-05-21 21:25:12',
+            applystatusname: '已生效',
+            applystatus: 'efected',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis003',
+            pictureurl:'/images/serviceimg/elasticsearch.png',
+            updatedate: '2018-05-22 22:22:33',
+            applystatusname: '审批中',
+            applystatus: 'approving',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'AAA',
+                value:'1000GB',
+                usage:'60%'
+              },
+              {
+                name:'BB',
+                value:'1000GB',
+                usage:'100%'
+              },
+              {
+                name:'Test',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+          {
+            title:'zhaoyimingredis004',
+            pictureurl:'/images/serviceimg/etcd.png',
+            updatedate: '2018-05-22 22:22:33',
+            applystatusname: '未批准',
+            applystatus: 'notapproved',
+            serviceitems: [
+              {
+                name:'最大存储容量',
+                value:'1000GB',
+                usage:'60%'
+              },
+            ]
+          },
+        ],
+
+      };
+
+      $scope.toolmng = {
+        toolsApplyTypes: [
+          {
+            name: '全部服务',
+            count: 80,
+            selected: false,
+            type:null,
+          },
+          {
+            name: '已生效',
+            count: 20,
+            selected: false,
+            applystatus: 'efected',
+          },
+          {
+            name: '未批准',
+            count: 20,
+            selected: false,
+            applystatus: 'notapproved',
+          },
+          {
+            name: '审批中',
+            count: 10,
+            selected: false,
+            applystatus: 'approving',
+          },
+          {
+            name: '未申请',
+            count: 10,
+            selected: false,
+            applystatus: 'notapply',
+          },
+        ],
+        tools: [
+          {
+            title:'IPO',
+            pictureurl:'/images/serviceimg/redis.png',
+            updatedate: '2018-05-21 21:25:12',
+            applystatusname: '未申请',
+            applystatus: 'notapply',
+          },
+          {
+            title:'SA',
+            pictureurl:'/images/serviceimg/redis.png',
+            updatedate: '2018-05-21 21:25:12',
+            applystatusname: '未申请',
+            applystatus: 'notapply',
+          },
+          {
+            title:'门户',
+            pictureurl:'/images/serviceimg/redis.png',
+            updatedate: '2018-05-21 21:25:12',
+            applystatusname: '未申请',
+            applystatus: 'notapply',
+          },
+          {
+            title:'可视化申请',
+            pictureurl:'/images/serviceimg/redis.png',
+            updatedate: '2018-05-21 21:25:12',
+            applystatusname: '未申请',
+            applystatus: 'notapply',
+          },
+        ],
+
+      };
+
+      $scope.userauthmng = {
+        userlist: [
+          {
+            username:'songzg_ts1',
+            role: '管理员',
+          },
+          {
+            username:'songzg_ts2',
+            role: '管理员',
+          },
+          {
+            username:'songzg_ts3',
+            role: '用户',
+          },
+          {
+            username:'songzg_ts4',
+            role: '用户',
+          },
+          {
+            username:'songzg_ts5',
+            role: '用户',
+          },
+          {
+            username:'songzg_ts6',
+            role: '用户',
+          },
+        ],
+      };
+
       $scope.talentList = [
         {
           name:'Tanent1',

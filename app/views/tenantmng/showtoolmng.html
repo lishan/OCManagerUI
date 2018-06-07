@@ -1,1 +1,43 @@
-<h1>Show Tool Mng</h1>
+<div id="showtoolmngpageid">
+        <div style="margin-top:10px">
+            <button ng-class="{ true : 'selected', false : 'notselected' }[item.selected]" class="service_choice_btn" ng-click="item.selected=!item.selected"
+                ng-repeat="item in toolmng.toolsApplyTypes">
+                <span>
+                    <span class="servicestatus" ng-class=" {'efected':'efected', 'notapproved': 'notapproved','approving':'approving','notapply':'applying'}[item.applystatus] ">
+                    </span>
+                    {{item.name}} {{item.count}}
+                </span>
+            </button>
+        </div>
+    
+        <div style="margin-top:10px;display:inline-flex;flex-wrap:wrap;">
+            <div ng-repeat="item in toolmng.tools">
+                <div class="tool_card">
+                    <div class="cartcontent">
+                        <div class="instancePicture">
+                            <img src="{{item.pictureurl}}" style="width:48px;height:48px;" />
+                        </div>
+                        <div class="instanceHeader">
+                            <div class="">
+                                <span>
+                                    {{item.title}}
+                                </span>
+                                <span class="flaotToRight status">{{item.applystatusname}}</span>
+                                <span style="margin-right:5px;" class="flaotToRight servicestatus" ng-class=" {'efected':'efected', 'notapproved': 'notapproved','approving':'approving','notapply':'notapply'}[item.applystatus] "></span>
+                            </div>
+                            <div>
+                                <span class="updatedateinfo">{{item.updatedate}}</span>
+                            </div>
+                        </div>
+                        <div class="spaceline"></div>
+                    </div>
+    
+                    <div class="cardfooter">
+                        <a class="center_cartbtn">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
